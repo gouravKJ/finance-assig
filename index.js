@@ -68,6 +68,9 @@ const validaterecord=({amount,type,category,date})=>{
 }
 
 //routes
+app.get("/",(req,res)=>{
+    res.send("finance system is running can check with different endpoints ");
+});
 app.post("/api/auth/register",async(req,res)=>{
     try{
         const{name,email,password,role}=req.body;
